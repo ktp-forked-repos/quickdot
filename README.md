@@ -1,17 +1,15 @@
 # quickdot
 Lisp program to visualize the relationships among quicklisp systems, and other tools related with the study or use of quicklisp
 
-Requires: 
-graphviz
-quicklisp
+Requires: graphviz, quicklisp
 
 Use: 
-Paste the code in a lisp repl and then write (quickdot)
+Paste the code in a common lisp repl and then write (quickdot) and pulse enter
 
 Produces: 
 A file quick.dot in your homedir with the relationships among systems (system dependencies) 
 
-This file can then be processed with graphviz to create several outputs  (pdf, jpg...ect). See the examples below.
+This file can then be processed with graphviz in a shell to drawn the plot in several types of files (pdf, jpg, svg, xfig, bitmap...). See the examples below.
 
 Examples:
 
