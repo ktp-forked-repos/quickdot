@@ -7,15 +7,15 @@ Use:
 Paste the code in a common lisp repl and then write (quickdot) and pulse enter
 
 Produces: 
-A file quick.dot in your homedir with the relationships among systems (system dependencies) 
+A file quick.gv in your homedir with the relationships among systems (system dependencies) 
 
 This file can then be processed with graphviz in a shell to drawn the plot in several types of files (pdf, jpg, svg, xfig, bitmap...). See the examples below.
 
 Examples:
 
-sfdp -Goverlap=prism -Tpdf quick.dot > quick.pdf
+sfdp -Goverlap=prism -Tpdf quick.gv > quick.pdf
 
-sfdp -Goverlap=prism -Tjpg quick.dot > quick.jpg
+sfdp -Goverlap=prism -Tjpg quick.gv > quick.jpg
 
 Sfdp is better than dot with large graphs, like in this case. -Goverlap is included to avoid overlapping in nodes.
 
