@@ -4,7 +4,7 @@
 		 :direction :output
 		 :if-exists :supersede
 		 :if-does-not-exist :create)
-;(let *color* '(255 255 255)
+
     (loop
        initially (format gr "graph quicklisp \{~%rankdir=LR;~%edge [arrowhead\=\"none\"];~%~%")
        for i in (ql:system-list) do
