@@ -10,7 +10,7 @@
        for i in (ql:system-list) do
 	 (format gr "\"~a\" [style\=filled, fillcolor\=\"gray\", label\=\"~:*~a\"];~%" (ql-dist:name i))
 
-	 (if (> (length (ql-dist:required-systems i)) 0) 
+	 (when (> (length (ql-dist:required-systems i)) 0) 
 	 (format gr "\"~a\" -- \{~{\"\~a~^\" ~}\"\};~%"
 		 (ql-dist:name i)
 		 (ql-dist:required-systems i)))
