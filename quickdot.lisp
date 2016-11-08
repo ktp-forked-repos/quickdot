@@ -11,7 +11,7 @@
 	 (format gr "\"~a\" [style\=filled, fillcolor\=\"gray\", label\=\"~:*~a\"];~%" (ql-dist:name i))
 
 	 (unless (null (ql-dist:required-systems i))
-	 (format gr "\"~a\" -- \{~{\"\~a~^\" ~}\"\};~%"
+	   (format gr "\"~a\" -- \{~{\"\~a~^\" ~}\"\};~%"
 		 (ql-dist:name i)
 		 (ql-dist:required-systems i)))
-        finally (format gr "}"))))
+       finally (format gr "}"))))
