@@ -6,9 +6,9 @@
 		 :if-does-not-exist :create)
 
     (loop
-       initially (format gr "graph quicklisp \{~%rankdir=LR;~%edge [arrowhead\=\"none\"];~%~%")
+       initially (format gr "graph quicklisp \{~%rankdir=LR;~%edge [arrowhead=\"none\"];~%~%")
        for i in (ql:system-list) do
-	 (format gr "\"~a\" [style\=filled, fillcolor\=\"gray\", label\=\"~:*~a\"];~%" (ql-dist:name i))
+	 (format gr "\"~a\" [style=filled, fillcolor=\"gray\", label=\"~:*~a\"];~%" (ql-dist:name i))
 
 	 (unless (null (ql-dist:required-systems i))
 	   (format gr "\"~a\" -- \{~{\"\~a~^\" ~}\"\};~%"
