@@ -17,9 +17,9 @@ sfdp -Goverlap=prism -Tpdf quick.gv > quick.pdf
 
 sfdp -Goverlap=prism -Tjpg quick.gv > quick.jpg
 
-Sfdp is better than dot with large graphs, like in this case. -Goverlap is included to avoid overlapping in nodes.
+Sfdp is better than dot with large graphs, like in this case, but is not supported still by cl-dot. -Goverlap is included to avoid overlapping in nodes.
 
 TODO:
 
 Adding colors to each group of systems related.
-Accept individual systems as argument
+Accept individual systems as argument (first try is still very slow) 
