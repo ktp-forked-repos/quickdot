@@ -22,3 +22,4 @@ Sfdp is better than dot with large graphs, like in this case. -Goverlap is inclu
 TODO:
 
 Adding colors to each group of systems related.
+Accept individual systems as argument
