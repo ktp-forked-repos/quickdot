@@ -13,9 +13,9 @@ This file can then be processed with graphviz in a shell to drawn the plot in se
 
 Examples:
 
-`sfdp -Goverlap=prism -Tpdf quick.gv > quick.pdf
+`sfdp -Goverlap=prism -Tpdf quick.gv > quick.pdf`
 
-`sfdp -Goverlap=prism -Tjpg quick.gv > quick.jpg
+`sfdp -Goverlap=prism -Tjpg quick.gv > quick.jpg`
 
 Sfdp is better than dot with large graphs, like in this case, but is not supported still by cl-dot. -Goverlap is included to avoid overlapping in nodes.
 
