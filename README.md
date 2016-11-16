@@ -10,9 +10,7 @@ Paste the code in a common lisp repl and then write (quickdot) and pulse enter
 ### Produces: 
 A file quick.gv in your homedir with the relationships among systems (system dependencies) 
 
-This file can then be processed with graphviz in a shell to drawn the plot in several types of files (pdf, jpg, svg, xfig, bitmap...). See the examples below.
-
-### Examples:
+This file can then be processed with graphviz in a shell to drawn the plot in several types of files (pdf, jpg, svg, xfig, bitmap...). Examples:
 
 `sfdp -Goverlap=prism -Tpdf quick.gv > quick.pdf`
 
