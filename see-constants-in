@@ -3,6 +3,6 @@
   The current value of each one is also printed after the name of the constant
   i.e (see-constants-in 'cl)"
   
-  (loop initially (format t "[constant: actual value] found in ~a:~%" paquete)
+  (loop initially (format t "[Constant: actual value] found in ~a:~%" package)
      for i being the present-symbols in package do
        (when (constantp i) (format t "~a: ~a~%" i (eval i)))))
