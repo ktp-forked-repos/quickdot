@@ -13,7 +13,7 @@ Notes: In most of the cases you'll need to load the package before with quickloa
 
 Examples: 
 
-`(see-constants-in 'cl)`
+(see-constants-in 'cl)
 
 `(ql:quickload :cl-ppcre)
 
