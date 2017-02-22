@@ -1,5 +1,5 @@
 # see-constants-in
-Lisp program to explore and find quickly all the constants available in a package and its current values.
+Small Lisp program to explore and find quickly all the constants available in a package and its current values.
 
 ### Use: 
 load the file "see-constants-in" or paste its contents in a common lisp repl and write:
@@ -8,9 +8,15 @@ load the file "see-constants-in" or paste its contents in a common lisp repl and
 
 Where package is a valid package name.
 
-Note: (see-constants-in package) without "'" or ":" before the package name, will abort with an error message
+Notes: In most of the cases you'll need to load the package before with quickload or the program will not find it. 
+(see-constants-in package) without "'" or ":" before the package name, will abort with an error message
 
-Example: (see-constants-in 'cl)
+Examples: 
+
+(see-constants-in 'cl)
+
+(ql:quickload :cl-ppcre)
+(see-constants-in :cl-ppcre)
 
 
 # quickdot
