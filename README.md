@@ -8,9 +8,10 @@ load the file "see-constants-in" or paste its contents in a common lisp repl and
 
 Where package is a valid package name.
 
+Note: (see-constants-in package) without "'" or ":" before the package name, will abort with an error message
+
 Example: (see-constants-in 'cl)
 
-Note: (see-constants-in package) without ' or : before the package name will abort with an error message (package does not exist)
 
 # quickdot
 Lisp program to visualize the relationships among quicklisp systems, and other tools related with the study or use of quicklisp
