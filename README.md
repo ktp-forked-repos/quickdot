@@ -1,12 +1,15 @@
 # see-constants-in
-Lisp program to explore and find quickly all the constants available in a package and its current values
+Lisp program to explore and find quickly all the constants available in a package and its current values.
+
 ### Use: 
-Paste the code in a common lisp repl and then write:
+load the file "see-constants-in" or paste its contents in a common lisp repl and write:
 
 (see-constants-in 'package) or (see-constants-in :package)
 
 Where package is a valid package name
 example: (see-constants-in :cl)
+
+Note: (see-constants-in package) without ' or : before the package name is an error
 
 # quickdot
 Lisp program to visualize the relationships among quicklisp systems, and other tools related with the study or use of quicklisp
@@ -15,7 +18,8 @@ Lisp program to visualize the relationships among quicklisp systems, and other t
 graphviz, quicklisp
 
 ### Use: 
-Paste the code in a common lisp repl and then write (quickdot) and pulse enter
+load the file quickdot.lisp or paste the code in a common lisp repl and write:
+(quickdot)
 
 ### Produces: 
 A file quick.gv in your homedir with the relationships among systems (system dependencies) 
