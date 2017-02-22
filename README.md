@@ -15,9 +15,7 @@ Examples:
 
 (see-constants-in 'cl)
 
-(ql:quickload :cl-ppcre)
-
-(see-constants-in :cl-ppcre)
+(ql:quickload :cl-ppcre) (see-constants-in :cl-ppcre)
 
 # quickdot
 Lisp program to visualize the relationships among quicklisp systems, and other tools related with the study or use of quicklisp
