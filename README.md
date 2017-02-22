@@ -1,3 +1,13 @@
+# see-constants-in
+Lisp program to explore and find quickly all the constants available in a package and its current values
+### Use: 
+Paste the code in a common lisp repl and then write:
+
+(see-constants-in 'package) or (see-constants-in :package)
+
+Where package is a valid package name
+example: (see-constants-in :cl)
+
 # quickdot
 Lisp program to visualize the relationships among quicklisp systems, and other tools related with the study or use of quicklisp
 
