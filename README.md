@@ -6,8 +6,9 @@ load the file "see-constants-in" or paste its contents in a common lisp repl and
 
 (see-constants-in 'package) or (see-constants-in :package)
 
-Where package is a valid package name
-example: (see-constants-in :cl)
+Where package is a valid package name.
+
+Example: (see-constants-in 'cl)
 
 Note: (see-constants-in package) without ' or : before the package name is an error
 
