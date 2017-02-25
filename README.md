@@ -1,5 +1,5 @@
 # see-constants-in
-Small Lisp program to explore and find quickly all the constants available in a package and its current values.
+Small Lisp program to explore and find quickly all the constants available in a package and its values.
 
 ### Use: 
 load the file "see-constants-in" or paste its contents in a common lisp repl and write:
