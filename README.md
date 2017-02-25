@@ -24,7 +24,7 @@ Lisp program to visualize the relationships among quicklisp systems, and other t
 graphviz, quicklisp
 
 ### Use: 
-load the file quickdot.lisp or paste the code in a common lisp repl and write:
+load the file "quickdot.lisp" or paste the code in a common lisp repl and write:
 (quickdot)
 
 ### Produces: 
