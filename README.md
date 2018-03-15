@@ -40,5 +40,5 @@ Sfdp is better than dot with large graphs, like in this case, but is not support
 
 ## TODO:
 
-Adding colors to each group of systems related.
+See TODO.txt
 Accept individual systems as argument (first try is still very slow) 
