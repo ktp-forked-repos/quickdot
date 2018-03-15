@@ -41,4 +41,3 @@ Sfdp is better than dot with large graphs, like in this case, but is not support
 ## TODO:
 
 See TODO.txt
-Accept individual systems as argument (first try is still very slow) 
