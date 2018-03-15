@@ -1,4 +1,4 @@
-Todo for quickdot
+Todo list for quickdot
 -----------------
 
 DONE 2018-03-14 Start adding colors
@@ -6,9 +6,9 @@ DONE 2018-03-14 Start adding colors
  red: system that depends on another single system. Both must be loaded by quicklisp to work.
  orange: system with two dependencies
  violet: three dependencies
- 
 
 
+Accept individual systems as argument (first try still very slow) 
 
 
 
