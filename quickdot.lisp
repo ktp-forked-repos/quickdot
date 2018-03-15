@@ -28,10 +28,29 @@
     (loop
        initially (format gr "graph quicklisp {~%rankdir=LR;~%edge [arrowhead=\"none\"];~%~%")
        for i in (ql:system-list) do
-	 (format gr "\"~a\" [style=filled, fillcolor=\"gray\", label=\"~:*~a\"];~%" (ql-dist:name i))
+     
+      (setf color
+	   (cond ((= (length (ql-dist:required-systems i)) 0)
+		  (string "white"))
+		 ((= (length (ql-dist:required-systems i)) 1)
+		  (string "red"))
+		 ((= (length (ql-dist:required-systems i)) 2)
+		  (string "orange"))
+ 		 ((= (length (ql-dist:required-systems i)) 3)
+		  (string "violet"))
+		 ((> (length (ql-dist:required-systems i)) 40)
+		  (string "gray20"))
+ 		 ((> (length (ql-dist:required-systems i)) 20)
+		  (string "gray60"))
+		 ((eq nil colores)
+		  (string "cyan"))
+	       (t (pop colores))))
+     
+	 (format gr "\"~a\" [style=filled, fillcolor=~a, label=\"~a\"];~%" (ql-dist:name i) color (ql-dist:name i))
 
 	 (unless (null (ql-dist:required-systems i))
-	   (format gr "\"~a\" -- \{~{\"\~a~^\" ~}\"\};~%"
+	   (format gr "\"~a\" -- \{~{\"\~a~^\" ~}\"\}[color=~a];~%"
 		 (ql-dist:name i)
-		 (ql-dist:required-systems i)))
+		 (ql-dist:required-systems i)
+		  color))
        finally (format gr "}"))))
