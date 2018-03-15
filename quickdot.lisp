@@ -86,9 +86,9 @@
        for i in (ql:system-list) do
      
       (setf color
-	   (cond ((= (length (ql-dist:required-systems i)) 0)
+	   (cond ((null (ql-dist:required-systems i))
 		  (string "white"))
-		 ((= (length (ql-dist:required-systems i)) 1)
+		 ((null (cdr (ql-dist:required-systems i)))
 		  (string "red"))
 		 ((= (length (ql-dist:required-systems i)) 2)
 		  (string "orange"))
