@@ -98,7 +98,7 @@
 		  (string "gray20"))
  		 ((> (length (ql-dist:required-systems i)) 20)
 		  (string "gray60"))
-		 ((eq nil colores)
+		 ((null colores)
 		  (string "cyan"))
 	       (t (pop colores))))
      
