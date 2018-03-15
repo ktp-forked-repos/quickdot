@@ -90,7 +90,7 @@
 		  (string "white"))
 		 ((null (cdr (ql-dist:required-systems i)))
 		  (string "red"))
-		 ((= (length (ql-dist:required-systems i)) 2)
+		 ((null (cddr (ql-dist:required-systems i)))
 		  (string "orange"))
  		 ((= (length (ql-dist:required-systems i)) 3)
 		  (string "violet"))
