@@ -38,6 +38,8 @@ This file can then be processed with graphviz in a shell to drawn the plot in se
 
 Sfdp is better than dot with large graphs, like in this case, but is not supported still by cl-dot. -Goverlap is included to avoid overlapping in nodes.
 
-## TODO:
+See the file results.png in doc/ directory for an example of the result. Your pdf should shown a similar (but zoom-able) picture of the entire quicklisp system-list.
+
+### TODO:
 
 See TODO.txt
