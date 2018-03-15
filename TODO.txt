@@ -1,0 +1,21 @@
+Todo for quickdot
+-----------------
+
+DONE 2018-03-14 Start adding colors
+ white: system isolated. Does not depend on the pre-loading of any other systems to work
+ red: system that depends on another single system. Both must be loaded by quicklisp to work.
+ orange: system with two dependencies
+ violet: three dependencies
+ 
+
+
+
+
+
+
+
+
+
+
+
+
