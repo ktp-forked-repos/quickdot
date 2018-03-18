@@ -74,13 +74,13 @@
 	          "salmon2" "salmon3" "salmon4" "sandybrown" "seagreen" "seagreen1" "seagreen2" "seagreen3" "seagreen4"
 	          "seashell" "seashell1" "seashell2" "seashell3" "seashell4" "sienna" "sienna1" "sienna2" "sienna3" 
 	          "sienna4" "skyblue" "skyblue1" "skyblue2" "skyblue3" "skyblue4" "slateblue" "slateblue1" "slateblue2"
-	          "slateblue3" "slateblue4" "slategray" "slategray1" "slategray2" 
-			      "slategray3" "slategray4" "slategrey" "snow" "snow1" "snow2" "snow3" "snow4" "springgreen"
-			      "springgreen1" "springgreen2" "springgreen3" "springgreen4" "steelblue" "steelblue1" "steelblue2" "steelblue3"
-			      "steelblue4" "tan" "tan1" "tan2" "tan3" "tan4" "thistle" "thistle1"
-			  "thistle2" "thistle3" "thistle4" "tomato" "tomato1" "tomato2" "tomato3" "tomato4" "transparent" "turquoise" "turquoise1" 
-			  "turquoise2" "turquoise3" "turquoise4" "violet" "violetred" "violetred1" "violetred2" "violetred3" "violetred4" "wheat" "wheat1" "wheat2" 
-			  "wheat3" "wheat4" "whitesmoke" "yellow" "yellow1" "yellow2" "yellow3" "yellow4" "yellowgreen"))
+	          "slateblue3" "slateblue4" "slategray" "slategray1" "slategray2" "slategray3" "slategray4" "slategrey"
+                  "snow" "snow1" "snow2" "snow3" "snow4" "springgreen" "springgreen1" "springgreen2" "springgreen3" 
+	          "springgreen4" "steelblue" "steelblue1" "steelblue2" "steelblue3" "steelblue4" "tan" "tan1" "tan2" 
+	          "tan3" "tan4" "thistle" "thistle1" "thistle2" "thistle3" "thistle4" "tomato" "tomato1" "tomato2" 
+		  "tomato3" "tomato4" "transparent" "turquoise" "turquoise1" "turquoise2" "turquoise3" "turquoise4" 
+	          "violet" "violetred" "violetred1" "violetred2" "violetred3" "violetred4" "wheat" "wheat1" "wheat2" 
+		  "wheat3" "wheat4" "whitesmoke" "yellow" "yellow1" "yellow2" "yellow3" "yellow4" "yellowgreen"))
     (loop
        initially (format gr "graph quicklisp {~%rankdir=LR;~%edge [arrowhead=\"none\"];~%~%")
        for i in (ql:system-list) do
