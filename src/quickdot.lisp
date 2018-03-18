@@ -92,7 +92,9 @@
 		  (string "red"))
 		 ((null (cddr (ql-dist:required-systems i)))
 		  (string "orange"))
- 		 ((= (length (ql-dist:required-systems i)) 3)
+		 ((null (cdddr (ql-dist:required-systems i)))
+		  (string "yellow"))
+ 		 ((= (length (ql-dist:required-systems i)) 4)
 		  (string "violet"))
 		 ((> (length (ql-dist:required-systems i)) 40)
 		  (string "gray20"))
@@ -102,7 +104,10 @@
 		  (string "cyan"))
 	       (t (pop colores))))
      
-	 (format gr "\"~a\" [style=filled, fillcolor=~a, label=\"~a\"];~%" (ql-dist:name i) color (ql-dist:name i))
+	 (format gr "\"~a\" [style=filled, fillcolor=~a, label=\"~a\"];~%" 
+		 (ql-dist:name i) 
+		 color 
+		 (ql-dist:name i))
 
 	 (unless (null (ql-dist:required-systems i))
 	   (format gr "\"~a\" -- \{~{\"\~a~^\" ~}\"\}[color=~a];~%"
