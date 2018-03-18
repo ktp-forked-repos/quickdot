@@ -94,7 +94,7 @@
 		  (string "orange"))
 		 ((null (cdddr (ql-dist:required-systems i)))
 		  (string "yellow"))
- 		 ((= (length (ql-dist:required-systems i)) 4)
+ 		 ((null (cddr (cddr (ql-dist:required-systems i))))
 		  (string "violet"))
 		 ((> (length (ql-dist:required-systems i)) 40)
 		  (string "gray20"))
